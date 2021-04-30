@@ -37,3 +37,5 @@ if __name__ == '__main__':
         with open(name, 'wb') as f:
             for chunk in r.iter_content(chunk_size=128):
                 f.write(chunk)
+
+    print("Data downloaded.")

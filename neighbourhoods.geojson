@@ -1,0 +1,14 @@
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: canada/qc/quebec-city\2021-04-11\data\neighbourhoods.geojson</li>
+<li>RequestId: B9FPM7T4Q5S0809B</li>
+<li>HostId: BIAhq2EARs1VfT+QiOP+WLH2Pn7yjgIDxqUrXPiYYahcQUZJ+nLyQrQhJOSDEsOI/dEYHy36sgU=</li>
+</ul>
+<hr/>
+</body>
+</html>

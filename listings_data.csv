@@ -1,0 +1,14 @@
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: canada/qc/quebec-city\2021-04-11\data\listings.csv.gz</li>
+<li>RequestId: C3M1NVNZQ0AS71H5</li>
+<li>HostId: Jwoy+p3CODSuttpb/Q1Zt2S3FN7ZCCVUj+MVv97oaUXKpJORRo15oEaQusZkQ4w+54Yjk7ql/Rc=</li>
+</ul>
+<hr/>
+</body>
+</html>
