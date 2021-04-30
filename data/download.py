@@ -9,6 +9,7 @@ import argparse
 EXAMPLE_URL = 'http://data.insideairbnb.com/canada/qc/quebec-city/2021-04-11/data/calendar.csv.gz'
 ROOT_URL = 'http://data.insideairbnb.com/canada/qc/quebec-city'
 END_DIR = 'download'
+headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -22,9 +23,17 @@ if __name__ == '__main__':
 
     # Téléchargement des données
     ## data
-    for url in AIRBNB_FILES['data']:
-        pass
+    for name in AIRBNB_FILES['data']:
+        r = requests.get(os.path.join(END_DATA_URL, name), headers=headers, stream=True)
+        name = name.replace('.csv.gz', '')
+        name += '_data.csv'
+        with open(name, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=128):
+                f.write(chunk)
 
     ## visualisations
-    for url in AIRBNB_FILES['visualisations']:
-        pass
+    for name in AIRBNB_FILES['visualisations']:
+        r = requests.get(os.path.join(END_DATA_URL, name), headers=headers, stream=True)
+        with open(name, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=128):
+                f.write(chunk)

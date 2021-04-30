@@ -133,3 +133,6 @@ dmypy.json
 
 # Fichiers téléchargés
 download
+
+# Jetbrains
+.idea
